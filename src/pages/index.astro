@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+		<div class="text-center mb-12">
+			<h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Infinite Minds FLL</h1>
+			<p class="text-xl text-gray-600">Inspiring young minds through robotics and innovation</p>
+		</div>
+
+		<!-- Image Gallery Section -->
+		<div class="mt-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Journey in Pictures</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="rounded-lg overflow-hidden shadow-lg">
+					<img 
+						src="/images/team-competition.jpg" 
+						alt="Team at competition" 
+						class="w-full h-64 object-cover"
+					/>
+					<div class="p-4 bg-white">
+						<h3 class="text-lg font-semibold">Competition Day</h3>
+						<p class="text-gray-600">Our team showcasing their skills at the FLL competition</p>
+					</div>
+				</div>
+				<div class="rounded-lg overflow-hidden shadow-lg">
+					<img 
+						src="/images/fundraiser5.jpg" 
+						alt="Team fundraising event" 
+						class="w-full h-64 object-cover"
+					/>
+					<div class="p-4 bg-white">
+						<h3 class="text-lg font-semibold">Community Engagement</h3>
+						<p class="text-gray-600">Connecting with our community through fundraising events</p>
+					</div>
+				</div>
+				<div class="rounded-lg overflow-hidden shadow-lg">
+					<img 
+						src="/images/fundraiser4.jpg" 
+						alt="Another fundraising activity" 
+						class="w-full h-64 object-cover"
+					/>
+					<div class="p-4 bg-white">
+						<h3 class="text-lg font-semibold">Team Spirit</h3>
+						<p class="text-gray-600">Working together to achieve our goals</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Call to Action -->
+		<div class="mt-16 text-center">
+			<a href="/contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition-colors">
+				Get in Touch
+			</a>
+		</div>
+	</div>
 </Layout>
