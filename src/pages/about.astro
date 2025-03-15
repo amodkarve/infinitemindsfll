@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="About">
@@ -16,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
 					We are team Infinite Minds - a passionate team of eight middle school students dedicated to exploring robotics and STEM through the FIRST LEGO League (FLL) competitions. FLL, hosted by the non-profit organization FIRST, challenges young minds each year with exciting prompts that inspire innovation and teamwork.
 				</p>
 				<div class="my-8">
-					<img src="/images/team-competition.jpg" alt="Team at competition" class="rounded-lg shadow-lg w-full max-w-2xl mx-auto" />
+					<img src={`${baseUrl}images/team-competition.jpg`} alt="Team at competition" class="rounded-lg shadow-lg w-full max-w-2xl mx-auto" />
 				</div>
 			</div>
 
